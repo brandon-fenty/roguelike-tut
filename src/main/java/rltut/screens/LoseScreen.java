@@ -1,14 +1,14 @@
-package screens;
+package rltut.screens;
 
 import asciiPanel.AsciiPanel;
 
 import java.awt.event.KeyEvent;
 
-public class WinScreen implements Screen {
+public class LoseScreen implements Screen {
 
     @Override
     public void displayOutput(AsciiPanel terminal) {
-        terminal.write("-=- You Win -=-", 1, 1);
+        terminal.write("-=- You LOSE -=-", 1, 1);
         terminal.writeCenter("--- press [ENTER] to restart ---", 22);
     }
 

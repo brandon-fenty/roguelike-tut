@@ -1,6 +1,8 @@
+package rltut;
+
 import asciiPanel.AsciiPanel;
-import screens.Screen;
-import screens.StartScreen;
+import rltut.screens.Screen;
+import rltut.screens.StartScreen;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -22,20 +24,24 @@ public class ApplicationMain extends JFrame implements KeyListener {
         repaint();
     }
 
+    @Override
     public void repaint() {
         terminal.clear();
         screen.displayOutput(terminal);
         super.repaint();
     }
 
+    @Override
     public void keyPressed(KeyEvent e) {
         screen = screen.respondToUserInput(e);
         repaint();
     }
 
+    @Override
     public void keyReleased(KeyEvent e) {
     }
 
+    @Override
     public void keyTyped(KeyEvent e) {
     }
 

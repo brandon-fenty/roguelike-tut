@@ -1,4 +1,4 @@
-package screens;
+package rltut.screens;
 
 import asciiPanel.AsciiPanel;
 
